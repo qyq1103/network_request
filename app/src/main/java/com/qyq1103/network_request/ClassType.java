@@ -5,8 +5,8 @@ import java.util.List;
 /**
  * @author：静·灵
  * @date: 2020/1/7 14:41
- * 描述：
- * 功能:
+ * 描述：数据模型
+ * 功能: 数据的类型对象
  */
 public class ClassType {
     private String msg;

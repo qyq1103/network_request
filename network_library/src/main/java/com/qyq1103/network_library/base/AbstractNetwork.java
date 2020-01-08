@@ -148,8 +148,20 @@ public abstract class AbstractNetwork implements IEnvironment {
         };
     }
 
+    /**
+     * 获取retrofit
+     * @param service 接口类
+     * @param <T> 范型类
+     * @return retrofit
+     */
     public abstract <T> T getService(Class<T> service);
 
+    /**
+     * 获取缓存
+     * @param cacheService 缓存的接口类
+     * @param <T> 范型类
+     * @return 缓存接口的实例对象
+     */
     public abstract <T> T getCacheService(Class<T> cacheService);
 
     /**

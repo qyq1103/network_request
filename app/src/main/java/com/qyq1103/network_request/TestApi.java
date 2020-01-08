@@ -7,8 +7,8 @@ import retrofit2.http.Query;
 /**
  * @author：静·灵
  * @date: 2020/1/8 16:50
- * 描述：
- * 功能:
+ * 描述： 网络请求的接口类
+ * 功能: 同域名的接口都写在这里，方便请求
  */
 public interface TestApi {
     @GET("app/appClassList")

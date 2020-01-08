@@ -8,9 +8,9 @@ import okhttp3.Interceptor;
 /**
  * @author：静·灵
  * @date: 2020/1/8 16:45
- * 描述：
- * 功能:
- */
+ * 描述：网络请求
+ * 功能：网络请求的封装
+ * */
 public class HttpRequest extends AbstractNetwork {
     private static HttpRequest httpRequest;
 
@@ -42,6 +42,7 @@ public class HttpRequest extends AbstractNetwork {
 
     @Override
     protected <T> Function<T, T> getAppErrorHandle() {
+        //不可以返回null，返回null会报错，不处理直接返回对象即可
         return new Function<T, T>() {
             @Override
             public T apply(T t) throws Exception {

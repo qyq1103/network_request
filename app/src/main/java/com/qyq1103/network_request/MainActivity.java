@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //网络请求初始化
         HttpRequest.init(new AbstractNetworkInfo() {
             @Override
             public boolean isDebug() {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //网络请求调用
         HttpRequest.getInstance().getService(TestApi.class).getClassList("9099")
                 .compose(HttpRequest.getInstance().applySchedulers(new BaseObserver<ClassType>() {
                     @Override
