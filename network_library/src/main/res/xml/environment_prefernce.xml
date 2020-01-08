@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:entries="@array/entries_list_preference"
+        android:entryValues="@array/entry_values_list_preference"
+        android:icon="@mipmap/ic_setting"
+        android:key="network_environment_type"
+        android:summary="@string/environment_summary"
+        android:title="@string/environment_title" />
+</PreferenceScreen>

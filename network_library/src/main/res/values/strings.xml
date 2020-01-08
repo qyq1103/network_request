@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">network_library</string>
+    <string name="environment_summary">请您选择您需要使用的网络环境，选择完后重启APP生效</string>
+    <string name="environment_title">设置网络环境</string>
+    <string-array name="entries_list_preference">
+        <item>正式环境</item>
+        <item>测试环境</item>
+    </string-array>
+    <string-array name="entry_values_list_preference">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>
