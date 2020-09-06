@@ -20,9 +20,7 @@ public class RequestInterceptor implements Interceptor {
     @NotNull
     @Override
     public Response intercept(@NotNull Chain chain) throws IOException {
-        String t = String.valueOf(System.currentTimeMillis());
         Request.Builder builder = chain.request().newBuilder();
-        builder.addHeader("t", t);
         builder.addHeader("os", Constants.OS);
         return chain.proceed(builder.build());
     }
