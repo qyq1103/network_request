@@ -7,6 +7,6 @@ package com.qyq1103.network_request;
  * 功能:
  */
 public class Constants {
-    public static final String TEST_API = "https://slb-zhiye-new-test.ksbao.com/api/";
-    public static final String FORMAL_API = "https://slb-zhiye-new.ksbao.com/api/";
+    public static final String TEST_API = "http://v.juhe.cn/toutiao/";
+    public static final String FORMAL_API = "http://v.juhe.cn/toutiao/";
 }

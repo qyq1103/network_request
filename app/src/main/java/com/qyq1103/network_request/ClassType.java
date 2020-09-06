@@ -9,262 +9,159 @@ import java.util.List;
  * 功能: 数据的类型对象
  */
 public class ClassType {
-    private String msg;
-    private int status;
-    private List<DataBean> data;
 
-    public String getMsg() {
-        return msg;
+    /**
+     * reason : 成功的返回
+     * result : {"stat":"1","data":[{"uniquekey":"dadd17ac1e74659bf6a05d548176c3c0","title":"猕猴桃和奇异果傻傻分不清，原来区别这么大？知道后别再瞎买了","date":"2020-07-03 21:27","category":"头条","author_name":"瘦猴厨房","url":"https://mini.eastday.com/mobile/200703212737251.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/2020070321_3ca15a9db17c4507813846cac666e0a0_4783_cover_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/2020070321_3bf4b0c694ad47f5b07c500660d6166a_4574_cover_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/2020070321_93d72d48a2dd4718b9da9dca8d1e0397_2520_cover_mwpm_03200403.jpg"},{"uniquekey":"d19bd8885bab8739b3d599083cc8f329","title":"上港下狠手了，原锋线主力可能失去主力位置，在球队战功卓越","date":"2020-07-03 21:17","category":"头条","author_name":"火狐品牌","url":"https://mini.eastday.com/mobile/200703211711132.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703211711_26d1e597af5021d1e30678506f1bf678_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703211711_26d1e597af5021d1e30678506f1bf678_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703211711_26d1e597af5021d1e30678506f1bf678_2_mwpm_03200403.jpg"},{"uniquekey":"45e72c62eda16ee6cd1d3c0ce3adfa77","title":"7月中旬期间，前缘回来，爱情迎来转机，旧情复燃的四大生肖","date":"2020-07-03 21:10","category":"头条","author_name":"原创星座","url":"https://mini.eastday.com/mobile/200703211022692.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/20200703211022_d098affdb4463bea6e15843025864f99_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/20200703211022_d098affdb4463bea6e15843025864f99_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/20200703211022_d098affdb4463bea6e15843025864f99_1_mwpm_03200403.jpg"},{"uniquekey":"d5afea10763870b7a3039d6f436aca52","title":"全新一代哈弗H6本月上市，尺寸变大，1.5T引擎马力169匹","date":"2020-07-03 21:04","category":"头条","author_name":"车镖局","url":"https://mini.eastday.com/mobile/200703210423121.html","thumbnail_pic_s":"https://03imgmini.eastday.com/mobile/20200703/2020070320_7783c78da34143b89c28d04f8414a428_3330_mwpm_03200403.jpg","thumbnail_pic_s02":"http://03imgmini.eastday.com/mobile/20200703/2020070320_f8e5b26d08204d4e8b774e3a8f12f605_1737_mwpm_03200403.jpg","thumbnail_pic_s03":"http://03imgmini.eastday.com/mobile/20200703/2020070320_8afa843ef0bb4798b1901cfa6944863e_3599_mwpm_03200403.jpg"},{"uniquekey":"1be45e0fc6dcd81b6d90848e2bc84d25","title":"别克威朗GS首次推出三厢版，165匹马力终于官宣，网友：有内味了","date":"2020-07-03 20:58","category":"头条","author_name":"汽车爆米花","url":"https://mini.eastday.com/mobile/200703205812478.html","thumbnail_pic_s":"https://06imgmini.eastday.com/mobile/20200703/20200703205812_b4f803e27ce182a4061d7775c015549c_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://06imgmini.eastday.com/mobile/20200703/20200703205812_b4f803e27ce182a4061d7775c015549c_1_mwpm_03200403.jpg","thumbnail_pic_s03":"http://06imgmini.eastday.com/mobile/20200703/20200703205812_b4f803e27ce182a4061d7775c015549c_3_mwpm_03200403.jpg"},{"uniquekey":"93dabe2329ffad1c9933781109c14e37","title":"中信证券+第一创业，两股均是首板，既是补涨者，也是奋进者","date":"2020-07-03 20:58","category":"头条","author_name":"鹭鹰股巢","url":"https://mini.eastday.com/mobile/200703205807137.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703205807_ba06e07e14311a33f7bcdff914d88964_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://02imgmini.eastday.com/mobile/20200703/20200703205807_ba06e07e14311a33f7bcdff914d88964_2_mwpm_03200403.jpg"},{"uniquekey":"5d1acf6955ff6b3893980e3b0adf0b65","title":"对称性、平衡性、命运能量的合理分配，疾病康复的终极法宝","date":"2020-07-03 20:57","category":"头条","author_name":"计沙健康咨询","url":"https://mini.eastday.com/mobile/200703205717633.html","thumbnail_pic_s":"https://08imgmini.eastday.com/mobile/20200703/20200703205717_4cf9f4b428e2fcaf4c3babb3a9e903ee_1_mwpm_03200403.jpg"},{"uniquekey":"45a5935da0e8f3fe450f9d361aeccd05","title":"大厨教你在家10分钟轻松搞定奶油蘑菇汤，比必胜客味道还好喝！","date":"2020-07-03 20:53","category":"头条","author_name":"美食熊猫","url":"https://mini.eastday.com/mobile/200703205349452.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/2020070320_ebaa90fecd4e4321870462037e362b1b_7204_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/2020070320_7e1bf67a6d13478caa39c773d799893d_1835_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/2020070320_502656bdee154bff966db3d949f57467_1700_mwpm_03200403.jpg"},{"uniquekey":"464df2d501dc514fbd4a55c479fc8c6f","title":"\u200b公会战为何让人着迷？剑网三热血，这款更是激情燃战","date":"2020-07-03 20:47","category":"头条","author_name":"红尘君style","url":"https://mini.eastday.com/mobile/200703204738132.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703204738_06241e407ebb6fd2ec4c6d4f39c58c2b_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://02imgmini.eastday.com/mobile/20200703/20200703204738_06241e407ebb6fd2ec4c6d4f39c58c2b_1_mwpm_03200403.jpg","thumbnail_pic_s03":"http://02imgmini.eastday.com/mobile/20200703/20200703204738_06241e407ebb6fd2ec4c6d4f39c58c2b_4_mwpm_03200403.jpg"},{"uniquekey":"638469d5438c16aea17b432db8ddbd27","title":"跨境出口新政率先在浙江落地 海关为稳外贸再添一笔","date":"2020-07-03 20:46","category":"头条","author_name":"浙江跨境电子商务","url":"https://mini.eastday.com/mobile/200703204655817.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703204655_2aca8e80b324d8b181040a3d31b501db_3_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703204655_2aca8e80b324d8b181040a3d31b501db_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703204655_2aca8e80b324d8b181040a3d31b501db_2_mwpm_03200403.jpg"},{"uniquekey":"38dca3e3aeb57081739ea6366d47538d","title":"有些星座一个人挺好的，真不需要你安慰","date":"2020-07-03 20:46","category":"头条","author_name":"TF少年GO","url":"https://mini.eastday.com/mobile/200703204652996.html","thumbnail_pic_s":"https://04imgmini.eastday.com/mobile/20200703/20200703204652_168b616664710ca5eec75fd565e90d7a_1_mwpm_03200403.jpg"},{"uniquekey":"63799fc2673e6e1180c4ab8c65fb7b34","title":"华为在芯片的集成IC层面获得突破？或有望脱离ARM架构","date":"2020-07-03 20:46","category":"头条","author_name":"创一黑科","url":"https://mini.eastday.com/mobile/200703204613478.html","thumbnail_pic_s":"https://03imgmini.eastday.com/mobile/20200703/20200703204613_6b80a12ca03cde2ffea0414e54feba8b_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://03imgmini.eastday.com/mobile/20200703/20200703204613_6b80a12ca03cde2ffea0414e54feba8b_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://03imgmini.eastday.com/mobile/20200703/20200703204613_6b80a12ca03cde2ffea0414e54feba8b_2_mwpm_03200403.jpg"},{"uniquekey":"0a19e29a67af7e5122db85f296287b6d","title":"开通后次日，沪苏通大桥车流量过3万！","date":"2020-07-03 20:43","category":"头条","author_name":"光明网","url":"https://mini.eastday.com/mobile/200703204356697.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703204356_04662f409ae6997a8c1637f2453e4bf2_1_mwpm_03200403.jpg"},{"uniquekey":"8a5d8c8327e31d520fb316d13b16d6b4","title":"龙族幻想捏脸难度太大？这款游戏捏脸黑科技，手残党也有春天","date":"2020-07-03 20:42","category":"头条","author_name":"一品游戏","url":"https://mini.eastday.com/mobile/200703204211384.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/20200703204211_0e9de36f24342ca2a65ee516a44bbb87_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/20200703204211_0e9de36f24342ca2a65ee516a44bbb87_5_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/20200703204211_0e9de36f24342ca2a65ee516a44bbb87_3_mwpm_03200403.jpg"},{"uniquekey":"8d031d2a3feef76d56d5a39f62827ba6","title":"大牛股上调估值却无故跌停，这些股你有吗？","date":"2020-07-03 20:39","category":"头条","author_name":"中国财富网","url":"https://mini.eastday.com/mobile/200703203922047.html","thumbnail_pic_s":"https://01imgmini.eastday.com/mobile/20200703/20200703203922_8caeb077ecfa092dbc250b704db8194b_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://01imgmini.eastday.com/mobile/20200703/20200703203922_8caeb077ecfa092dbc250b704db8194b_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://01imgmini.eastday.com/mobile/20200703/20200703203922_8caeb077ecfa092dbc250b704db8194b_2_mwpm_03200403.jpg"},{"uniquekey":"098f103cd0ae62d1e5e44e164ed73af2","title":"外卖小哥卷入车底，58秒内冲出19名热心市民来抬车救人","date":"2020-07-03 20:34","category":"头条","author_name":"北青网","url":"https://mini.eastday.com/mobile/200703203445405.html","thumbnail_pic_s":"https://01imgmini.eastday.com/mobile/20200703/20200703203445_44129737271b40db9d1f5c06bd5b7aba_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://01imgmini.eastday.com/mobile/20200703/20200703203445_44129737271b40db9d1f5c06bd5b7aba_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://01imgmini.eastday.com/mobile/20200703/20200703203445_44129737271b40db9d1f5c06bd5b7aba_2_mwpm_03200403.jpg"},{"uniquekey":"04fb7ef7c8c64f9ee7f70c2d7ab2bb07","title":"夏天适合吃这鱼，刺少肉嫩，记住这比例：12345，开胃下饭","date":"2020-07-03 20:32","category":"头条","author_name":"希味淡","url":"https://mini.eastday.com/mobile/200703203239691.html","thumbnail_pic_s":"https://08imgmini.eastday.com/mobile/20200703/2020070320_f7305c51ec614679bf0f659fa39f9d0f_5542_cover_mwpm_03200403.jpg","thumbnail_pic_s02":"http://08imgmini.eastday.com/mobile/20200703/2020070320_7b41e078b0df4ce2a5fd3b5bcb91dcb4_7799_cover_mwpm_03200403.jpg","thumbnail_pic_s03":"http://08imgmini.eastday.com/mobile/20200703/2020070320_38c95a6c11dd4442ad2637b2b074c273_5392_cover_mwpm_03200403.jpg"},{"uniquekey":"970d007bdc04166b21f1c9ab35970425","title":"世界杯女王29岁生日那天，张继科被催婚，网友：猝不及防的缘分","date":"2020-07-03 20:31","category":"头条","author_name":"鲸鲱鱼","url":"https://mini.eastday.com/mobile/200703203154670.html","thumbnail_pic_s":"https://06imgmini.eastday.com/mobile/20200703/2020070320_827ed38522494fabace1d73a8a366e90_0703_mwpm_03200403.jpg","thumbnail_pic_s02":"http://06imgmini.eastday.com/mobile/20200703/2020070320_2edab06c5821494fa1dfc8bb86d51a01_9531_mwpm_03200403.jpg","thumbnail_pic_s03":"http://06imgmini.eastday.com/mobile/20200703/2020070320_61006085e15e480cbdbc8a29a0f612e1_6638_mwpm_03200403.jpg"},{"uniquekey":"763378a48a9c0951883e476e921c6636","title":"莫迪赴中印边境？赵立坚：不应采取可能导致局势复杂化举动","date":"2020-07-03 20:29","category":"头条","author_name":"人民网","url":"https://mini.eastday.com/mobile/200703202943021.html","thumbnail_pic_s":"https://00imgmini.eastday.com/mobile/20200703/20200703202943_27f63d4bf9f8804c63e34381bb31f772_1_mwpm_03200403.jpg"},{"uniquekey":"0ab8f0e3458d1a5c9694bce8abb5c128","title":"他曾是\u201c最帅老师\u201d，娶大6岁妻子，今老婆照片曝光却是熟悉的她！","date":"2020-07-03 20:29","category":"头条","author_name":"谷运娱乐","url":"https://mini.eastday.com/mobile/200703202940765.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703202940_1140dc0caf5d5e7cff563637b6212e10_3_mwpm_03200403.jpg","thumbnail_pic_s02":"http://02imgmini.eastday.com/mobile/20200703/20200703202940_1140dc0caf5d5e7cff563637b6212e10_2_mwpm_03200403.jpg","thumbnail_pic_s03":"http://02imgmini.eastday.com/mobile/20200703/20200703202940_1140dc0caf5d5e7cff563637b6212e10_1_mwpm_03200403.jpg"},{"uniquekey":"14303fb204f16eb6dbc0cc4b9be53a8e","title":"宋殇公的纠结","date":"2020-07-03 20:28","category":"头条","author_name":"不明不白啊","url":"https://mini.eastday.com/mobile/200703202855006.html","thumbnail_pic_s":"https://00imgmini.eastday.com/mobile/20200703/20200703202855_56de915aa2c4b8aeb2dfcf27c584b0f0_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://00imgmini.eastday.com/mobile/20200703/20200703202855_56de915aa2c4b8aeb2dfcf27c584b0f0_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://00imgmini.eastday.com/mobile/20200703/20200703202855_56de915aa2c4b8aeb2dfcf27c584b0f0_1_mwpm_03200403.jpg"},{"uniquekey":"86ef6819b62b5958b9b221b0c6355586","title":"女人气质搭配，柔美有魅力，尽显完美曲线！","date":"2020-07-03 20:22","category":"头条","author_name":"时尚小发","url":"https://mini.eastday.com/mobile/200703202238438.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/2020070320_4bf2594bd16548ffb81549aa543944d7_3811_cover_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/2020070320_faafcd2577ab45978ac61d98b35c436e_0150_cover_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/2020070320_2d33219d3e19467997fa6bf8f84ddfb6_6384_cover_mwpm_03200403.jpg"},{"uniquekey":"38cbb2329955e6b426bc5d361ae86914","title":"排行：八一负北京，王治郅赛后发言一针见血！吉林灭山东止颓势","date":"2020-07-03 20:22","category":"头条","author_name":"体育大参考","url":"https://mini.eastday.com/mobile/200703202214893.html","thumbnail_pic_s":"https://08imgmini.eastday.com/mobile/20200703/2020070320_251038e39ec746728a84498ae983bba6_4278_mwpm_03200403.jpg","thumbnail_pic_s02":"http://08imgmini.eastday.com/mobile/20200703/2020070320_8983864149f34b918e25f79268ba2a32_4312_mwpm_03200403.jpg","thumbnail_pic_s03":"http://08imgmini.eastday.com/mobile/20200703/2020070320_6dd7c505a59940d8ad03cf53cfeee68c_7070_mwpm_03200403.jpg"},{"uniquekey":"670bdb687845f9e64b9a25775e9fb6bd","title":"桑干河畔的千年龟城：开阳古堡","date":"2020-07-03 20:20","category":"头条","author_name":"游北","url":"https://mini.eastday.com/mobile/200703202034838.html","thumbnail_pic_s":"https://06imgmini.eastday.com/mobile/20200703/20200703202034_f8ac2422991c414a7b541310dd23fde8_13_mwpm_03200403.jpg","thumbnail_pic_s02":"http://06imgmini.eastday.com/mobile/20200703/20200703202034_f8ac2422991c414a7b541310dd23fde8_12_mwpm_03200403.jpg","thumbnail_pic_s03":"http://06imgmini.eastday.com/mobile/20200703/20200703202034_f8ac2422991c414a7b541310dd23fde8_3_mwpm_03200403.jpg"},{"uniquekey":"55b9baaf8950c03342cae83675bece46","title":"曾被千万人表白\u201c我等你长大\u201d，27岁近照曝光后，你们后悔吗？","date":"2020-07-03 20:16","category":"头条","author_name":"胡萝卜来说娱乐","url":"https://mini.eastday.com/mobile/200703201646465.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703201646_e66d3aeaef544871e79129910dea27c1_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703201646_e66d3aeaef544871e79129910dea27c1_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703201646_e66d3aeaef544871e79129910dea27c1_1_mwpm_03200403.jpg"},{"uniquekey":"155dd51199d628b7d437416c18a09535","title":"她13岁被乾隆一眼看中，宫斗败于令妃，却成后宫位分最高的女人","date":"2020-07-03 20:16","category":"头条","author_name":"友华说历史","url":"https://mini.eastday.com/mobile/200703201620527.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703201620_68fece49ed3b1fbd4344475d30b5ee17_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703201620_68fece49ed3b1fbd4344475d30b5ee17_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703201620_68fece49ed3b1fbd4344475d30b5ee17_3_mwpm_03200403.jpg"},{"uniquekey":"84e30ae938693d544994392dd2dac646","title":"家有一老，如有一宝\u2014\u2014上海精细化为老服务目击记","date":"2020-07-03 20:13","category":"头条","author_name":"北青网","url":"https://mini.eastday.com/mobile/200703201356804.html","thumbnail_pic_s":"https://07imgmini.eastday.com/mobile/20200703/20200703201356_efef2d0e76f871e9ee059f032659dfbb_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://07imgmini.eastday.com/mobile/20200703/20200703201356_efef2d0e76f871e9ee059f032659dfbb_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://07imgmini.eastday.com/mobile/20200703/20200703201356_efef2d0e76f871e9ee059f032659dfbb_2_mwpm_03200403.jpg"},{"uniquekey":"1728012e63055f52fa45ae7c6f88e7ac","title":"入门就300马，60万级别无对手，霸气车标很迷人别看718了","date":"2020-07-03 20:12","category":"头条","author_name":"老张聊会儿车","url":"https://mini.eastday.com/mobile/200703201247784.html","thumbnail_pic_s":"https://07imgmini.eastday.com/mobile/20200703/20200703201247_10ea00f67bd4ff3b52054f2aa40be6c4_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://07imgmini.eastday.com/mobile/20200703/20200703201247_10ea00f67bd4ff3b52054f2aa40be6c4_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://07imgmini.eastday.com/mobile/20200703/20200703201247_10ea00f67bd4ff3b52054f2aa40be6c4_1_mwpm_03200403.jpg"},{"uniquekey":"9a32e6ec49b04123153c07c650f12a2a","title":"短短一天时间，2款华为荣耀同时亮相，价格从1699到2499","date":"2020-07-03 20:11","category":"头条","author_name":"创投时报","url":"https://mini.eastday.com/mobile/200703201107701.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/20200703201107_6c36f2f881154215f7cb4688b9f12fd4_6_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/20200703201107_6c36f2f881154215f7cb4688b9f12fd4_5_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/20200703201107_6c36f2f881154215f7cb4688b9f12fd4_4_mwpm_03200403.jpg"},{"uniquekey":"445b9c40bf30da9a0f44ca906d434075","title":"北京新发地聚集性疫情正在得到有效控制","date":"2020-07-03 20:09","category":"头条","author_name":"北青网","url":"https://mini.eastday.com/mobile/200703200936878.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703200936_d7bb7acc9ec41c8105ea09a5c0cd0b3d_1_mwpm_03200403.jpg"}]}
+     * error_code : 0
+     */
+
+    private String reason;
+    private ResultBean result;
+    private int error_code;
+
+    public String getReason() {
+        return reason;
     }
 
-    public void setMsg(String msg) {
-        this.msg = msg;
+    public void setReason(String reason) {
+        this.reason = reason;
     }
 
-    public int getStatus() {
-        return status;
+    public ResultBean getResult() {
+        return result;
     }
 
-    public void setStatus(int status) {
-        this.status = status;
+    public void setResult(ResultBean result) {
+        this.result = result;
     }
 
-    public List<DataBean> getData() {
-        return data;
+    public int getError_code() {
+        return error_code;
     }
 
-    public void setData(List<DataBean> data) {
-        this.data = data;
+    public void setError_code(int error_code) {
+        this.error_code = error_code;
     }
 
-    public static class DataBean {
+    public static class ResultBean {
+        /**
+         * stat : 1
+         * data : [{"uniquekey":"dadd17ac1e74659bf6a05d548176c3c0","title":"猕猴桃和奇异果傻傻分不清，原来区别这么大？知道后别再瞎买了","date":"2020-07-03 21:27","category":"头条","author_name":"瘦猴厨房","url":"https://mini.eastday.com/mobile/200703212737251.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/2020070321_3ca15a9db17c4507813846cac666e0a0_4783_cover_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/2020070321_3bf4b0c694ad47f5b07c500660d6166a_4574_cover_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/2020070321_93d72d48a2dd4718b9da9dca8d1e0397_2520_cover_mwpm_03200403.jpg"},{"uniquekey":"d19bd8885bab8739b3d599083cc8f329","title":"上港下狠手了，原锋线主力可能失去主力位置，在球队战功卓越","date":"2020-07-03 21:17","category":"头条","author_name":"火狐品牌","url":"https://mini.eastday.com/mobile/200703211711132.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703211711_26d1e597af5021d1e30678506f1bf678_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703211711_26d1e597af5021d1e30678506f1bf678_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703211711_26d1e597af5021d1e30678506f1bf678_2_mwpm_03200403.jpg"},{"uniquekey":"45e72c62eda16ee6cd1d3c0ce3adfa77","title":"7月中旬期间，前缘回来，爱情迎来转机，旧情复燃的四大生肖","date":"2020-07-03 21:10","category":"头条","author_name":"原创星座","url":"https://mini.eastday.com/mobile/200703211022692.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/20200703211022_d098affdb4463bea6e15843025864f99_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/20200703211022_d098affdb4463bea6e15843025864f99_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/20200703211022_d098affdb4463bea6e15843025864f99_1_mwpm_03200403.jpg"},{"uniquekey":"d5afea10763870b7a3039d6f436aca52","title":"全新一代哈弗H6本月上市，尺寸变大，1.5T引擎马力169匹","date":"2020-07-03 21:04","category":"头条","author_name":"车镖局","url":"https://mini.eastday.com/mobile/200703210423121.html","thumbnail_pic_s":"https://03imgmini.eastday.com/mobile/20200703/2020070320_7783c78da34143b89c28d04f8414a428_3330_mwpm_03200403.jpg","thumbnail_pic_s02":"http://03imgmini.eastday.com/mobile/20200703/2020070320_f8e5b26d08204d4e8b774e3a8f12f605_1737_mwpm_03200403.jpg","thumbnail_pic_s03":"http://03imgmini.eastday.com/mobile/20200703/2020070320_8afa843ef0bb4798b1901cfa6944863e_3599_mwpm_03200403.jpg"},{"uniquekey":"1be45e0fc6dcd81b6d90848e2bc84d25","title":"别克威朗GS首次推出三厢版，165匹马力终于官宣，网友：有内味了","date":"2020-07-03 20:58","category":"头条","author_name":"汽车爆米花","url":"https://mini.eastday.com/mobile/200703205812478.html","thumbnail_pic_s":"https://06imgmini.eastday.com/mobile/20200703/20200703205812_b4f803e27ce182a4061d7775c015549c_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://06imgmini.eastday.com/mobile/20200703/20200703205812_b4f803e27ce182a4061d7775c015549c_1_mwpm_03200403.jpg","thumbnail_pic_s03":"http://06imgmini.eastday.com/mobile/20200703/20200703205812_b4f803e27ce182a4061d7775c015549c_3_mwpm_03200403.jpg"},{"uniquekey":"93dabe2329ffad1c9933781109c14e37","title":"中信证券+第一创业，两股均是首板，既是补涨者，也是奋进者","date":"2020-07-03 20:58","category":"头条","author_name":"鹭鹰股巢","url":"https://mini.eastday.com/mobile/200703205807137.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703205807_ba06e07e14311a33f7bcdff914d88964_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://02imgmini.eastday.com/mobile/20200703/20200703205807_ba06e07e14311a33f7bcdff914d88964_2_mwpm_03200403.jpg"},{"uniquekey":"5d1acf6955ff6b3893980e3b0adf0b65","title":"对称性、平衡性、命运能量的合理分配，疾病康复的终极法宝","date":"2020-07-03 20:57","category":"头条","author_name":"计沙健康咨询","url":"https://mini.eastday.com/mobile/200703205717633.html","thumbnail_pic_s":"https://08imgmini.eastday.com/mobile/20200703/20200703205717_4cf9f4b428e2fcaf4c3babb3a9e903ee_1_mwpm_03200403.jpg"},{"uniquekey":"45a5935da0e8f3fe450f9d361aeccd05","title":"大厨教你在家10分钟轻松搞定奶油蘑菇汤，比必胜客味道还好喝！","date":"2020-07-03 20:53","category":"头条","author_name":"美食熊猫","url":"https://mini.eastday.com/mobile/200703205349452.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/2020070320_ebaa90fecd4e4321870462037e362b1b_7204_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/2020070320_7e1bf67a6d13478caa39c773d799893d_1835_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/2020070320_502656bdee154bff966db3d949f57467_1700_mwpm_03200403.jpg"},{"uniquekey":"464df2d501dc514fbd4a55c479fc8c6f","title":"\u200b公会战为何让人着迷？剑网三热血，这款更是激情燃战","date":"2020-07-03 20:47","category":"头条","author_name":"红尘君style","url":"https://mini.eastday.com/mobile/200703204738132.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703204738_06241e407ebb6fd2ec4c6d4f39c58c2b_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://02imgmini.eastday.com/mobile/20200703/20200703204738_06241e407ebb6fd2ec4c6d4f39c58c2b_1_mwpm_03200403.jpg","thumbnail_pic_s03":"http://02imgmini.eastday.com/mobile/20200703/20200703204738_06241e407ebb6fd2ec4c6d4f39c58c2b_4_mwpm_03200403.jpg"},{"uniquekey":"638469d5438c16aea17b432db8ddbd27","title":"跨境出口新政率先在浙江落地 海关为稳外贸再添一笔","date":"2020-07-03 20:46","category":"头条","author_name":"浙江跨境电子商务","url":"https://mini.eastday.com/mobile/200703204655817.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703204655_2aca8e80b324d8b181040a3d31b501db_3_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703204655_2aca8e80b324d8b181040a3d31b501db_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703204655_2aca8e80b324d8b181040a3d31b501db_2_mwpm_03200403.jpg"},{"uniquekey":"38dca3e3aeb57081739ea6366d47538d","title":"有些星座一个人挺好的，真不需要你安慰","date":"2020-07-03 20:46","category":"头条","author_name":"TF少年GO","url":"https://mini.eastday.com/mobile/200703204652996.html","thumbnail_pic_s":"https://04imgmini.eastday.com/mobile/20200703/20200703204652_168b616664710ca5eec75fd565e90d7a_1_mwpm_03200403.jpg"},{"uniquekey":"63799fc2673e6e1180c4ab8c65fb7b34","title":"华为在芯片的集成IC层面获得突破？或有望脱离ARM架构","date":"2020-07-03 20:46","category":"头条","author_name":"创一黑科","url":"https://mini.eastday.com/mobile/200703204613478.html","thumbnail_pic_s":"https://03imgmini.eastday.com/mobile/20200703/20200703204613_6b80a12ca03cde2ffea0414e54feba8b_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://03imgmini.eastday.com/mobile/20200703/20200703204613_6b80a12ca03cde2ffea0414e54feba8b_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://03imgmini.eastday.com/mobile/20200703/20200703204613_6b80a12ca03cde2ffea0414e54feba8b_2_mwpm_03200403.jpg"},{"uniquekey":"0a19e29a67af7e5122db85f296287b6d","title":"开通后次日，沪苏通大桥车流量过3万！","date":"2020-07-03 20:43","category":"头条","author_name":"光明网","url":"https://mini.eastday.com/mobile/200703204356697.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703204356_04662f409ae6997a8c1637f2453e4bf2_1_mwpm_03200403.jpg"},{"uniquekey":"8a5d8c8327e31d520fb316d13b16d6b4","title":"龙族幻想捏脸难度太大？这款游戏捏脸黑科技，手残党也有春天","date":"2020-07-03 20:42","category":"头条","author_name":"一品游戏","url":"https://mini.eastday.com/mobile/200703204211384.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/20200703204211_0e9de36f24342ca2a65ee516a44bbb87_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/20200703204211_0e9de36f24342ca2a65ee516a44bbb87_5_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/20200703204211_0e9de36f24342ca2a65ee516a44bbb87_3_mwpm_03200403.jpg"},{"uniquekey":"8d031d2a3feef76d56d5a39f62827ba6","title":"大牛股上调估值却无故跌停，这些股你有吗？","date":"2020-07-03 20:39","category":"头条","author_name":"中国财富网","url":"https://mini.eastday.com/mobile/200703203922047.html","thumbnail_pic_s":"https://01imgmini.eastday.com/mobile/20200703/20200703203922_8caeb077ecfa092dbc250b704db8194b_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://01imgmini.eastday.com/mobile/20200703/20200703203922_8caeb077ecfa092dbc250b704db8194b_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://01imgmini.eastday.com/mobile/20200703/20200703203922_8caeb077ecfa092dbc250b704db8194b_2_mwpm_03200403.jpg"},{"uniquekey":"098f103cd0ae62d1e5e44e164ed73af2","title":"外卖小哥卷入车底，58秒内冲出19名热心市民来抬车救人","date":"2020-07-03 20:34","category":"头条","author_name":"北青网","url":"https://mini.eastday.com/mobile/200703203445405.html","thumbnail_pic_s":"https://01imgmini.eastday.com/mobile/20200703/20200703203445_44129737271b40db9d1f5c06bd5b7aba_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://01imgmini.eastday.com/mobile/20200703/20200703203445_44129737271b40db9d1f5c06bd5b7aba_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://01imgmini.eastday.com/mobile/20200703/20200703203445_44129737271b40db9d1f5c06bd5b7aba_2_mwpm_03200403.jpg"},{"uniquekey":"04fb7ef7c8c64f9ee7f70c2d7ab2bb07","title":"夏天适合吃这鱼，刺少肉嫩，记住这比例：12345，开胃下饭","date":"2020-07-03 20:32","category":"头条","author_name":"希味淡","url":"https://mini.eastday.com/mobile/200703203239691.html","thumbnail_pic_s":"https://08imgmini.eastday.com/mobile/20200703/2020070320_f7305c51ec614679bf0f659fa39f9d0f_5542_cover_mwpm_03200403.jpg","thumbnail_pic_s02":"http://08imgmini.eastday.com/mobile/20200703/2020070320_7b41e078b0df4ce2a5fd3b5bcb91dcb4_7799_cover_mwpm_03200403.jpg","thumbnail_pic_s03":"http://08imgmini.eastday.com/mobile/20200703/2020070320_38c95a6c11dd4442ad2637b2b074c273_5392_cover_mwpm_03200403.jpg"},{"uniquekey":"970d007bdc04166b21f1c9ab35970425","title":"世界杯女王29岁生日那天，张继科被催婚，网友：猝不及防的缘分","date":"2020-07-03 20:31","category":"头条","author_name":"鲸鲱鱼","url":"https://mini.eastday.com/mobile/200703203154670.html","thumbnail_pic_s":"https://06imgmini.eastday.com/mobile/20200703/2020070320_827ed38522494fabace1d73a8a366e90_0703_mwpm_03200403.jpg","thumbnail_pic_s02":"http://06imgmini.eastday.com/mobile/20200703/2020070320_2edab06c5821494fa1dfc8bb86d51a01_9531_mwpm_03200403.jpg","thumbnail_pic_s03":"http://06imgmini.eastday.com/mobile/20200703/2020070320_61006085e15e480cbdbc8a29a0f612e1_6638_mwpm_03200403.jpg"},{"uniquekey":"763378a48a9c0951883e476e921c6636","title":"莫迪赴中印边境？赵立坚：不应采取可能导致局势复杂化举动","date":"2020-07-03 20:29","category":"头条","author_name":"人民网","url":"https://mini.eastday.com/mobile/200703202943021.html","thumbnail_pic_s":"https://00imgmini.eastday.com/mobile/20200703/20200703202943_27f63d4bf9f8804c63e34381bb31f772_1_mwpm_03200403.jpg"},{"uniquekey":"0ab8f0e3458d1a5c9694bce8abb5c128","title":"他曾是\u201c最帅老师\u201d，娶大6岁妻子，今老婆照片曝光却是熟悉的她！","date":"2020-07-03 20:29","category":"头条","author_name":"谷运娱乐","url":"https://mini.eastday.com/mobile/200703202940765.html","thumbnail_pic_s":"https://02imgmini.eastday.com/mobile/20200703/20200703202940_1140dc0caf5d5e7cff563637b6212e10_3_mwpm_03200403.jpg","thumbnail_pic_s02":"http://02imgmini.eastday.com/mobile/20200703/20200703202940_1140dc0caf5d5e7cff563637b6212e10_2_mwpm_03200403.jpg","thumbnail_pic_s03":"http://02imgmini.eastday.com/mobile/20200703/20200703202940_1140dc0caf5d5e7cff563637b6212e10_1_mwpm_03200403.jpg"},{"uniquekey":"14303fb204f16eb6dbc0cc4b9be53a8e","title":"宋殇公的纠结","date":"2020-07-03 20:28","category":"头条","author_name":"不明不白啊","url":"https://mini.eastday.com/mobile/200703202855006.html","thumbnail_pic_s":"https://00imgmini.eastday.com/mobile/20200703/20200703202855_56de915aa2c4b8aeb2dfcf27c584b0f0_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://00imgmini.eastday.com/mobile/20200703/20200703202855_56de915aa2c4b8aeb2dfcf27c584b0f0_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://00imgmini.eastday.com/mobile/20200703/20200703202855_56de915aa2c4b8aeb2dfcf27c584b0f0_1_mwpm_03200403.jpg"},{"uniquekey":"86ef6819b62b5958b9b221b0c6355586","title":"女人气质搭配，柔美有魅力，尽显完美曲线！","date":"2020-07-03 20:22","category":"头条","author_name":"时尚小发","url":"https://mini.eastday.com/mobile/200703202238438.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/2020070320_4bf2594bd16548ffb81549aa543944d7_3811_cover_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/2020070320_faafcd2577ab45978ac61d98b35c436e_0150_cover_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/2020070320_2d33219d3e19467997fa6bf8f84ddfb6_6384_cover_mwpm_03200403.jpg"},{"uniquekey":"38cbb2329955e6b426bc5d361ae86914","title":"排行：八一负北京，王治郅赛后发言一针见血！吉林灭山东止颓势","date":"2020-07-03 20:22","category":"头条","author_name":"体育大参考","url":"https://mini.eastday.com/mobile/200703202214893.html","thumbnail_pic_s":"https://08imgmini.eastday.com/mobile/20200703/2020070320_251038e39ec746728a84498ae983bba6_4278_mwpm_03200403.jpg","thumbnail_pic_s02":"http://08imgmini.eastday.com/mobile/20200703/2020070320_8983864149f34b918e25f79268ba2a32_4312_mwpm_03200403.jpg","thumbnail_pic_s03":"http://08imgmini.eastday.com/mobile/20200703/2020070320_6dd7c505a59940d8ad03cf53cfeee68c_7070_mwpm_03200403.jpg"},{"uniquekey":"670bdb687845f9e64b9a25775e9fb6bd","title":"桑干河畔的千年龟城：开阳古堡","date":"2020-07-03 20:20","category":"头条","author_name":"游北","url":"https://mini.eastday.com/mobile/200703202034838.html","thumbnail_pic_s":"https://06imgmini.eastday.com/mobile/20200703/20200703202034_f8ac2422991c414a7b541310dd23fde8_13_mwpm_03200403.jpg","thumbnail_pic_s02":"http://06imgmini.eastday.com/mobile/20200703/20200703202034_f8ac2422991c414a7b541310dd23fde8_12_mwpm_03200403.jpg","thumbnail_pic_s03":"http://06imgmini.eastday.com/mobile/20200703/20200703202034_f8ac2422991c414a7b541310dd23fde8_3_mwpm_03200403.jpg"},{"uniquekey":"55b9baaf8950c03342cae83675bece46","title":"曾被千万人表白\u201c我等你长大\u201d，27岁近照曝光后，你们后悔吗？","date":"2020-07-03 20:16","category":"头条","author_name":"胡萝卜来说娱乐","url":"https://mini.eastday.com/mobile/200703201646465.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703201646_e66d3aeaef544871e79129910dea27c1_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703201646_e66d3aeaef544871e79129910dea27c1_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703201646_e66d3aeaef544871e79129910dea27c1_1_mwpm_03200403.jpg"},{"uniquekey":"155dd51199d628b7d437416c18a09535","title":"她13岁被乾隆一眼看中，宫斗败于令妃，却成后宫位分最高的女人","date":"2020-07-03 20:16","category":"头条","author_name":"友华说历史","url":"https://mini.eastday.com/mobile/200703201620527.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703201620_68fece49ed3b1fbd4344475d30b5ee17_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://09imgmini.eastday.com/mobile/20200703/20200703201620_68fece49ed3b1fbd4344475d30b5ee17_4_mwpm_03200403.jpg","thumbnail_pic_s03":"http://09imgmini.eastday.com/mobile/20200703/20200703201620_68fece49ed3b1fbd4344475d30b5ee17_3_mwpm_03200403.jpg"},{"uniquekey":"84e30ae938693d544994392dd2dac646","title":"家有一老，如有一宝\u2014\u2014上海精细化为老服务目击记","date":"2020-07-03 20:13","category":"头条","author_name":"北青网","url":"https://mini.eastday.com/mobile/200703201356804.html","thumbnail_pic_s":"https://07imgmini.eastday.com/mobile/20200703/20200703201356_efef2d0e76f871e9ee059f032659dfbb_1_mwpm_03200403.jpg","thumbnail_pic_s02":"http://07imgmini.eastday.com/mobile/20200703/20200703201356_efef2d0e76f871e9ee059f032659dfbb_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://07imgmini.eastday.com/mobile/20200703/20200703201356_efef2d0e76f871e9ee059f032659dfbb_2_mwpm_03200403.jpg"},{"uniquekey":"1728012e63055f52fa45ae7c6f88e7ac","title":"入门就300马，60万级别无对手，霸气车标很迷人别看718了","date":"2020-07-03 20:12","category":"头条","author_name":"老张聊会儿车","url":"https://mini.eastday.com/mobile/200703201247784.html","thumbnail_pic_s":"https://07imgmini.eastday.com/mobile/20200703/20200703201247_10ea00f67bd4ff3b52054f2aa40be6c4_2_mwpm_03200403.jpg","thumbnail_pic_s02":"http://07imgmini.eastday.com/mobile/20200703/20200703201247_10ea00f67bd4ff3b52054f2aa40be6c4_3_mwpm_03200403.jpg","thumbnail_pic_s03":"http://07imgmini.eastday.com/mobile/20200703/20200703201247_10ea00f67bd4ff3b52054f2aa40be6c4_1_mwpm_03200403.jpg"},{"uniquekey":"9a32e6ec49b04123153c07c650f12a2a","title":"短短一天时间，2款华为荣耀同时亮相，价格从1699到2499","date":"2020-07-03 20:11","category":"头条","author_name":"创投时报","url":"https://mini.eastday.com/mobile/200703201107701.html","thumbnail_pic_s":"https://05imgmini.eastday.com/mobile/20200703/20200703201107_6c36f2f881154215f7cb4688b9f12fd4_6_mwpm_03200403.jpg","thumbnail_pic_s02":"http://05imgmini.eastday.com/mobile/20200703/20200703201107_6c36f2f881154215f7cb4688b9f12fd4_5_mwpm_03200403.jpg","thumbnail_pic_s03":"http://05imgmini.eastday.com/mobile/20200703/20200703201107_6c36f2f881154215f7cb4688b9f12fd4_4_mwpm_03200403.jpg"},{"uniquekey":"445b9c40bf30da9a0f44ca906d434075","title":"北京新发地聚集性疫情正在得到有效控制","date":"2020-07-03 20:09","category":"头条","author_name":"北青网","url":"https://mini.eastday.com/mobile/200703200936878.html","thumbnail_pic_s":"https://09imgmini.eastday.com/mobile/20200703/20200703200936_d7bb7acc9ec41c8105ea09a5c0cd0b3d_1_mwpm_03200403.jpg"}]
+         */
 
-        private int KsbClassID;
-        private int PID;
-        private String KsbClassName;
-        private int IsMedi;
-        private List<ChildsBean> Childs;
-        private List<ApplistBeanX> applist;
+        private String stat;
+        private List<DataBean> data;
 
-        public int getKsbClassID() {
-            return KsbClassID;
+        public String getStat() {
+            return stat;
         }
 
-        public void setKsbClassID(int KsbClassID) {
-            this.KsbClassID = KsbClassID;
+        public void setStat(String stat) {
+            this.stat = stat;
         }
 
-        public int getPID() {
-            return PID;
+        public List<DataBean> getData() {
+            return data;
         }
 
-        public void setPID(int PID) {
-            this.PID = PID;
+        public void setData(List<DataBean> data) {
+            this.data = data;
         }
 
-        public String getKsbClassName() {
-            return KsbClassName;
-        }
+        public static class DataBean {
+            /**
+             * uniquekey : dadd17ac1e74659bf6a05d548176c3c0
+             * title : 猕猴桃和奇异果傻傻分不清，原来区别这么大？知道后别再瞎买了
+             * date : 2020-07-03 21:27
+             * category : 头条
+             * author_name : 瘦猴厨房
+             * url : https://mini.eastday.com/mobile/200703212737251.html
+             * thumbnail_pic_s : https://05imgmini.eastday.com/mobile/20200703/2020070321_3ca15a9db17c4507813846cac666e0a0_4783_cover_mwpm_03200403.jpg
+             * thumbnail_pic_s02 : http://05imgmini.eastday.com/mobile/20200703/2020070321_3bf4b0c694ad47f5b07c500660d6166a_4574_cover_mwpm_03200403.jpg
+             * thumbnail_pic_s03 : http://05imgmini.eastday.com/mobile/20200703/2020070321_93d72d48a2dd4718b9da9dca8d1e0397_2520_cover_mwpm_03200403.jpg
+             */
 
-        public void setKsbClassName(String KsbClassName) {
-            this.KsbClassName = KsbClassName;
-        }
+            private String uniquekey;
+            private String title;
+            private String date;
+            private String category;
+            private String author_name;
+            private String url;
+            private String thumbnail_pic_s;
+            private String thumbnail_pic_s02;
+            private String thumbnail_pic_s03;
 
-        public int getIsMedi() {
-            return IsMedi;
-        }
-
-        public void setIsMedi(int IsMedi) {
-            this.IsMedi = IsMedi;
-        }
-
-        public List<ChildsBean> getChilds() {
-            return Childs;
-        }
-
-        public void setChilds(List<ChildsBean> Childs) {
-            this.Childs = Childs;
-        }
-
-        public List<ApplistBeanX> getApplist() {
-            return applist;
-        }
-
-        public void setApplist(List<ApplistBeanX> applist) {
-            this.applist = applist;
-        }
-
-        public static class ChildsBean {
-
-            private int KsbClassID;
-            private int PID;
-            private String KsbClassName;
-            private int IsMedi;
-            private Object Childs;
-            private List<ApplistBean> applist;
-
-            public int getKsbClassID() {
-                return KsbClassID;
+            public String getUniquekey() {
+                return uniquekey;
             }
 
-            public void setKsbClassID(int KsbClassID) {
-                this.KsbClassID = KsbClassID;
+            public void setUniquekey(String uniquekey) {
+                this.uniquekey = uniquekey;
             }
 
-            public int getPID() {
-                return PID;
+            public String getTitle() {
+                return title;
             }
 
-            public void setPID(int PID) {
-                this.PID = PID;
+            public void setTitle(String title) {
+                this.title = title;
             }
 
-            public String getKsbClassName() {
-                return KsbClassName;
+            public String getDate() {
+                return date;
             }
 
-            public void setKsbClassName(String KsbClassName) {
-                this.KsbClassName = KsbClassName;
+            public void setDate(String date) {
+                this.date = date;
             }
 
-            public int getIsMedi() {
-                return IsMedi;
+            public String getCategory() {
+                return category;
             }
 
-            public void setIsMedi(int IsMedi) {
-                this.IsMedi = IsMedi;
+            public void setCategory(String category) {
+                this.category = category;
             }
 
-            public Object getChilds() {
-                return Childs;
+            public String getAuthor_name() {
+                return author_name;
             }
 
-            public void setChilds(Object Childs) {
-                this.Childs = Childs;
+            public void setAuthor_name(String author_name) {
+                this.author_name = author_name;
             }
 
-            public List<ApplistBean> getApplist() {
-                return applist;
+            public String getUrl() {
+                return url;
             }
 
-            public void setApplist(List<ApplistBean> applist) {
-                this.applist = applist;
+            public void setUrl(String url) {
+                this.url = url;
             }
 
-            public static class ApplistBean {
-
-                private int AppID;
-                private int KsbClassID;
-                private String AppEName;
-                private String AppName;
-                private String CName;
-                private int SortID;
-
-                public int getAppID() {
-                    return AppID;
-                }
-
-                public void setAppID(int AppID) {
-                    this.AppID = AppID;
-                }
-
-                public int getKsbClassID() {
-                    return KsbClassID;
-                }
-
-                public void setKsbClassID(int KsbClassID) {
-                    this.KsbClassID = KsbClassID;
-                }
-
-                public String getAppEName() {
-                    return AppEName;
-                }
-
-                public void setAppEName(String AppEName) {
-                    this.AppEName = AppEName;
-                }
-
-                public String getAppName() {
-                    return AppName;
-                }
-
-                public void setAppName(String AppName) {
-                    this.AppName = AppName;
-                }
-
-                public String getCName() {
-                    return CName;
-                }
-
-                public void setCName(String CName) {
-                    this.CName = CName;
-                }
-
-                public int getSortID() {
-                    return SortID;
-                }
-
-                public void setSortID(int SortID) {
-                    this.SortID = SortID;
-                }
-            }
-        }
-
-        public static class ApplistBeanX {
-
-            private int AppID;
-            private int KsbClassID;
-            private String AppEName;
-            private String AppName;
-            private String CName;
-            private int SortID;
-
-            public int getAppID() {
-                return AppID;
+            public String getThumbnail_pic_s() {
+                return thumbnail_pic_s;
             }
 
-            public void setAppID(int AppID) {
-                this.AppID = AppID;
+            public void setThumbnail_pic_s(String thumbnail_pic_s) {
+                this.thumbnail_pic_s = thumbnail_pic_s;
             }
 
-            public int getKsbClassID() {
-                return KsbClassID;
+            public String getThumbnail_pic_s02() {
+                return thumbnail_pic_s02;
             }
 
-            public void setKsbClassID(int KsbClassID) {
-                this.KsbClassID = KsbClassID;
+            public void setThumbnail_pic_s02(String thumbnail_pic_s02) {
+                this.thumbnail_pic_s02 = thumbnail_pic_s02;
             }
 
-            public String getAppEName() {
-                return AppEName;
+            public String getThumbnail_pic_s03() {
+                return thumbnail_pic_s03;
             }
 
-            public void setAppEName(String AppEName) {
-                this.AppEName = AppEName;
-            }
-
-            public String getAppName() {
-                return AppName;
-            }
-
-            public void setAppName(String AppName) {
-                this.AppName = AppName;
-            }
-
-            public String getCName() {
-                return CName;
-            }
-
-            public void setCName(String CName) {
-                this.CName = CName;
-            }
-
-            public int getSortID() {
-                return SortID;
-            }
-
-            public void setSortID(int SortID) {
-                this.SortID = SortID;
+            public void setThumbnail_pic_s03(String thumbnail_pic_s03) {
+                this.thumbnail_pic_s03 = thumbnail_pic_s03;
             }
         }
     }

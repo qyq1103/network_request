@@ -1,5 +1,6 @@
 package com.qyq1103.network_request;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +15,7 @@ import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
+    @SuppressLint("CheckResult")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //网络请求调用
-        HttpRequest.getInstance().getService(TestApi.class).getClassList("9099")
+        HttpRequest.getInstance().getService(TestApi.class).getClassList("top","3dc86b09a2ee2477a5baa80ee70fcdf5")
                 .compose(HttpRequest.getInstance().applySchedulers(new BaseObserver<ClassType>() {
                     @Override
                     public void onSuccess(ClassType classType) {
